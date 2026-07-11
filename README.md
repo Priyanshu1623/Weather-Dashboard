@@ -6,7 +6,6 @@
 A beautiful, fully responsive weather dashboard built with HTML, CSS, and vanilla JavaScript. It fetches live weather data using the OpenWeatherMap API and features a sleek, modern **Glassmorphism** interface with built-in Light/Dark mode support.
 
 ## 📸 Preview
-*(Drag and drop your screenshot below this line when editing on GitHub)*
 
 <img width="1904" height="976" alt="Screenshot 2026-07-11 231151" src="https://github.com/user-attachments/assets/015a2029-2baa-4c0c-b043-3f1cd08f9d20" />
 
