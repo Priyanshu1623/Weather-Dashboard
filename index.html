@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d929e73f11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+                <h2>Weather Dashboard</h2>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                </label>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="sidebar glass-effect">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="city-input" placeholder="Search for a city...">
+                    <button id="search-btn">Search</button>
+                </div>
+
+                <div class="history-section">
+                    <h3>Recent Searches</h3>
+                    <ul id="history-list">
+                        </ul>
+                </div>
+            </aside>
+
+            <main class="weather-content hidden" id="weather-main">
+                
+                <div class="current-weather glass-effect">
+                    <div class="weather-info-main">
+                        <div class="location-details">
+                            <h1 id="city-name">--</h1>
+                            <p id="current-date">--</p>
+                        </div>
+                        <div class="temp-container">
+                            <h1 class="huge-temp" id="current-temp">--°</h1>
+                            <p class="feels-like">Feels like <span id="feels-like-temp">--°</span> | <span id="current-desc">--</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="weather-icon-large">
+                        <img id="current-icon" src="" alt="Weather Icon">
+                    </div>
+
+                    <div class="weather-stats">
+                        <div class="stat-item">
+                            <i class="fa-solid fa-wind"></i>
+                            <div>
+                                <p class="stat-label">Wind Speed</p>
+                                <h3 id="current-wind">-- m/s</h3>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-droplet"></i>
+                            <div>
+                                <p class="stat-label">Humidity</p>
+                                <h3 id="current-humidity">--%</h3>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-compress"></i>
+                            <div>
+                                <p class="stat-label">Pressure</p>
+                                <h3 id="current-pressure">-- hPa</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-section">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast-grid" id="forecast-container">
+                        </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
